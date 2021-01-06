@@ -8,7 +8,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    height: 80vh;
     background-color: #ddd;
 }
 input{
@@ -17,6 +17,10 @@ input{
 }
 .marks{
     font-size: 20px;
+}
+.quantity-marks{
+    margin-bottom: 15px;
+    font-style: italic;
 }
 button{
     margin-top: 35px;

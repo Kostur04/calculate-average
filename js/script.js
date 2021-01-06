@@ -1,6 +1,7 @@
 const mark = document.querySelector('.marks')
 const countBtn = document.querySelector('.countAverage')
 const input = document.querySelector('.addMark')
+const quantityMarks = document.querySelector('.quantity-marks')
 
 let marksArr = [];
 let count;
@@ -15,6 +16,10 @@ const addMarks = () => {
     mark.innerHTML = `Suma ocen: <span>${count}</span>`;
     input.value = ''
     input.focus()
+
+    // for (let i = 0; i < marksArr.length; i++) {
+        quantityMarks.innerHTML = `Ilość ocen: ${marksArr.length}`;
+    // }
 
 }
 const showAverage = () => {
