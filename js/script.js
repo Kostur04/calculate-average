@@ -16,10 +16,7 @@ const addMarks = () => {
     mark.innerHTML = `Suma ocen: <span>${count}</span>`;
     input.value = ''
     input.focus()
-
-    // for (let i = 0; i < marksArr.length; i++) {
-        quantityMarks.innerHTML = `Ilość ocen: ${marksArr.length}`;
-    // }
+    quantityMarks.innerHTML = `Ilość ocen: ${marksArr.length}`;
 
 }
 const showAverage = () => {
@@ -27,7 +24,7 @@ const showAverage = () => {
         let score = count / marksArr.length;
         mark.innerHTML = `Twoja średnia: <span>${score}</span>`;
         marksArr = []
-    }else{
+    } else {
         mark.innerHTML = 'Musisz podać ocene!'
         input.focus()
     }
