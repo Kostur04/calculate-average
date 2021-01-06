@@ -33,3 +33,12 @@ button:hover{
 span{
     font-weight: bold;
 }
+@media (min-width: 992px){
+    .marks{
+        font-size: 30px;
+    }
+    button{
+        padding: 20px 45px;
+        font-size: 18px;
+    }
+}
