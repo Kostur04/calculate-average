@@ -29,7 +29,11 @@ const showAverage = () => {
         input.focus()
     }
 }
-
+const clickNumber = () => {
+    if (event.keyCode === 13){
+        addMarks()
+    }
+}
 input.addEventListener("keyup", addMarks)
 countBtn.addEventListener("click", showAverage)
 
